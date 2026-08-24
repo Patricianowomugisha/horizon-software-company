@@ -16,7 +16,7 @@ function Contact() {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const whatsappNumber = "256707451174";
+  const whatsappNumber = "256770343407";
 
   const handleChange = (event) => {
     const { name, value } = event.target;
