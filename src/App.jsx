@@ -61,8 +61,7 @@ function PublicLayout({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
-
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
 
         {/* ==========================================
@@ -114,7 +113,6 @@ function App() {
           }
         />
 
-
         {/* ==========================================
             ADMIN LOGIN
            ========================================== */}
@@ -123,7 +121,6 @@ function App() {
           path="/admin/login"
           element={<AdminLogin />}
         />
-
 
         {/* ==========================================
             ADMIN PANEL
@@ -141,14 +138,12 @@ function App() {
             element={<AdminDashboard />}
           />
 
-
           {/* ADMIN MESSAGES */}
 
           <Route
             path="messages"
             element={<AdminMessages />}
           />
-
 
           {/* ADMIN QUOTE REQUESTS */}
 
@@ -157,14 +152,12 @@ function App() {
             element={<AdminQuotes />}
           />
 
-
           {/* ADMIN SERVICES */}
 
           <Route
             path="services"
             element={<AdminServices />}
           />
-
 
           {/* ADMIN PORTFOLIO */}
 
@@ -173,14 +166,12 @@ function App() {
             element={<AdminPortfolio />}
           />
 
-
           {/* ADMIN CLIENTS */}
 
           <Route
             path="clients"
             element={<AdminClients />}
           />
-
 
           {/* WEBSITE CONTENT */}
 
@@ -192,7 +183,6 @@ function App() {
         </Route>
 
       </Routes>
-
     </BrowserRouter>
   );
 }
