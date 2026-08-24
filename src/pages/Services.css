@@ -1,0 +1,259 @@
+.services-page{
+    width:100%;
+    font-family:"Poppins",sans-serif;
+    background:#ffffff;
+}
+
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.services-hero{
+    width:85%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.services-tag{
+    display:inline-block;
+    background:#F49B00;
+    color:#fff;
+    padding:10px 25px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.services-hero h1{
+    font-size:52px;
+    color:#2410BB;
+    margin-bottom:20px;
+}
+
+.services-hero p{
+    width:70%;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+}
+
+
+
+/* ===========================
+   SERVICES GRID
+=========================== */
+
+.services-grid{
+    width:85%;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    border-top:5px solid #F49B00;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    background:#2410BB;
+}
+
+.service-card:hover h2,
+.service-card:hover p,
+.service-card:hover .service-icon{
+    color:#fff;
+}
+
+.service-icon{
+    font-size:55px;
+    margin-bottom:20px;
+    transition:.35s;
+}
+
+.service-card h2{
+    color:#2410BB;
+    margin-bottom:18px;
+    font-size:24px;
+    transition:.35s;
+}
+
+.service-card p{
+    color:#666;
+    line-height:1.8;
+    transition:.35s;
+}
+
+
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-us{
+    width:85%;
+    margin:100px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.why-left span{
+    color:#F49B00;
+    font-weight:600;
+}
+
+.why-left h2{
+    color:#2410BB;
+    font-size:42px;
+    margin:18px 0;
+}
+
+.why-left p{
+    color:#666;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.why-right{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:#f8f9ff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(36,16,187,.08);
+    transition:.35s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    background:#2410BB;
+}
+
+.feature-card:hover h3,
+.feature-card:hover p{
+    color:#fff;
+}
+
+.feature-card h3{
+    color:#2410BB;
+    margin-bottom:15px;
+    transition:.35s;
+}
+
+.feature-card p{
+    color:#666;
+    line-height:1.7;
+    transition:.35s;
+}
+
+
+
+/* ===========================
+   CALL TO ACTION
+=========================== */
+
+.services-cta{
+    width:85%;
+    margin:90px auto;
+    padding:70px 40px;
+    background:linear-gradient(135deg,#2410BB,#18087A);
+    border-radius:25px;
+    text-align:center;
+    color:#fff;
+}
+
+.services-cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.services-cta p{
+    width:70%;
+    margin:0 auto 35px;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.services-btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#F49B00;
+    color:#fff;
+    text-decoration:none;
+    border-radius:35px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.services-btn:hover{
+    background:#fff;
+    color:#2410BB;
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.services-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.why-us{
+    grid-template-columns:1fr;
+}
+
+.services-hero h1{
+    font-size:42px;
+}
+
+.services-hero p,
+.services-cta p{
+    width:90%;
+}
+
+}
+
+@media(max-width:768px){
+
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+.why-right{
+    grid-template-columns:1fr;
+}
+
+.services-hero h1{
+    font-size:34px;
+}
+
+.why-left h2{
+    font-size:34px;
+}
+
+.services-cta h2{
+    font-size:32px;
+}
+
+}

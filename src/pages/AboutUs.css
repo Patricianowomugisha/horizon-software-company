@@ -1,0 +1,306 @@
+.about-page{
+    font-family: "Poppins", sans-serif;
+    background:#ffffff;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.about-hero{
+    width:85%;
+    margin:80px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-tag{
+    display:inline-block;
+    background:#F49B00;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.about-content h1{
+    font-size:52px;
+    color:#2410BB;
+    margin-bottom:25px;
+    line-height:1.2;
+}
+
+.about-content p{
+    font-size:17px;
+    color:#555;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    display: block;
+}
+
+.about-image img:hover{
+    transform:scale(1.02);
+}
+
+
+
+/* =========================
+   MISSION & VISION
+========================= */
+
+.mission-vision{
+    width:85%;
+    margin:0 auto 90px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.info-card{
+    background:#fff;
+    border-radius:20px;
+    padding:45px 35px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(36,16,187,.08);
+    border-top:5px solid #F49B00;
+    transition:.35s;
+}
+
+.info-card:hover{
+    transform:translateY(-10px);
+}
+
+.card-icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.info-card h2{
+    color:#2410BB;
+    margin-bottom:18px;
+}
+
+.info-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+
+
+/* =========================
+   VALUES
+========================= */
+
+.values-section{
+    background:#f8f9ff;
+    padding:90px 0;
+}
+
+.values-title{
+    text-align:center;
+    width:70%;
+    margin:0 auto 60px;
+}
+
+.values-title span{
+    color:#F49B00;
+    font-weight:600;
+}
+
+.values-title h2{
+    color:#2410BB;
+    font-size:42px;
+    margin:15px 0;
+}
+
+.values-title p{
+    color:#666;
+    line-height:1.8;
+}
+
+.values-grid{
+    width:85%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.value-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.value-card:hover{
+    background:#2410BB;
+    transform:translateY(-10px);
+}
+
+.value-card h3{
+    color:#2410BB;
+    margin-bottom:15px;
+    transition:.35s;
+}
+
+.value-card p{
+    color:#666;
+    line-height:1.8;
+    transition:.35s;
+}
+
+.value-card:hover h3,
+.value-card:hover p{
+    color:#fff;
+}
+
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta{
+    width:85%;
+    margin:90px auto;
+    background:linear-gradient(135deg,#2410BB,#14076F);
+    color:#fff;
+    border-radius:25px;
+    text-align:center;
+    padding:70px 40px;
+}
+
+.about-cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-cta p{
+    width:70%;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.about-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#F49B00;
+    color:#fff;
+    padding:16px 38px;
+    border-radius:35px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.about-btn:hover{
+    background:#fff;
+    color:#2410BB;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.about-hero{
+    flex-direction:column-reverse;
+}
+
+.mission-vision{
+    grid-template-columns:1fr;
+}
+
+.values-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.about-content,
+.about-image{
+    width:100%;
+}
+
+.about-content h1{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:768px){
+
+.values-grid{
+    grid-template-columns:1fr;
+}
+
+.values-title,
+.about-cta p{
+    width:90%;
+}
+
+.about-image img{
+    height:500px;
+}
+
+.about-cta h2{
+    font-size:34px;
+}
+
+}
+.about-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.founder-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.founder-info h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2410BB;
+    margin-bottom: 5px;
+}
+
+.founder-info p {
+    font-size: 18px;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}

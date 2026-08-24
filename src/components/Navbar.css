@@ -1,0 +1,108 @@
+/* ===========================
+   HORIZON SOFTWARE NAVBAR
+=========================== */
+
+.header{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.navbar{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    height:85px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    max-height:60px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+    transition:.3s;
+}
+
+.logo img:hover{
+    transform:scale(1.03);
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    gap:38px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:#333;
+    font-size:15px;
+    font-weight:500;
+    position:relative;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2410B8;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    background:#F49B00;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* Button */
+
+.quote-btn{
+    background:#2410B8;
+    color:#fff;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(36,16,184,.25);
+}
+
+.quote-btn:hover{
+    background:#F49B00;
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+.nav-links,
+.quote-btn{
+display:none;
+}
+
+.logo img{
+max-height:55px;
+}
+
+}
