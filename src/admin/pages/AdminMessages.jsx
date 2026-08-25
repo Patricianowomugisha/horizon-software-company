@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminMessages.css";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://horizon-software-backend.onrender.com";
 
 function AdminMessages() {
   const navigate = useNavigate();
@@ -91,7 +91,7 @@ function AdminMessages() {
 
       if (err instanceof TypeError) {
         setError(
-          "The browser could not connect to Flask at http://127.0.0.1:5000. Make sure the Flask backend is running."
+          "The browser could not connect to Flask at https://horizon-software-backend.onrender.com. Make sure the Flask backend is running."
         );
       } else {
         setError(

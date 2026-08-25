@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import heroImage from "../assets/hero.png";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://horizon-software-backend.onrender.com";
 
 function Home() {
   const [content, setContent] = useState({
